@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent Van Gogh</title>
+
+    <link rel="stylesheet" href="vangogh.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">VAN GOGH'S GALLERY</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Arts & Stories</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">En</a>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <!-- main img -->
+    <main>
+      <!-- illness -->
+      <a href="illness.html" target="_blank">
+        <img
+          src="picture/illnesspic.webp"
+          data-speedX="0.1"
+          data-speedY="0.2"
+          class="parallax picover1"
+        />
+      </a>
+
+      <!-- self portraits -->
+      <a href="selfportrait.html" target="_blank">
+        <img
+          src="picture/selfportrait.jpg"
+          data-speedX="0.2"
+          data-speedY="0.2"
+          class="parallax picover2"
+        />
+      </a>
+
+      <!-- sunflower -->
+      <a href="sunflower.html" target="_blank">
+        <img
+          src="picture/sunflower.jpg"
+          data-speedX="0.2"
+          data-speedY="0.5"
+          class="parallax sunflower"
+        />
+      </a>
+
+      <!-- Portrait with Grey hat -->
+      <a href="portraitwithgrey.html" target="_blank">
+        <img
+          src="picture/portraitwithgrey.jpg"
+          data-speedX="0.1"
+          data-speedY="0.3"
+          class="parallax picover4"
+        />
+      </a>
+
+      <!-- almond blossom-->
+      <a href="almondblossom.html" target="_blank">
+        <img
+          src="picture/almondbloosom.jpg"
+          data-speedX="0.1"
+          data-speedY="0.4"
+          class="parallax picover5"
+        />
+      </a>
+
+      <!-- tulip fields -->
+      <a href="tulipfields.html" target="_blank">
+        <img
+          src="picture/tulipfields.jpg"
+          data-speedX="0.2"
+          data-speedY="0.3"
+          class="parallax picover6"
+        />
+      </a>
+
+      <!-- forest sketch -->
+      <a href="forestsketch.html" target="_blank">
+        <img
+          src="picture/sketch forest.webp"
+          data-speedX="0.1"
+          data-speedY="0.3"
+          class="parallax picover7"
+        />
+      </a>
+
+      <!-- starry night -->
+      <a href="starrynight.html" target="_blank">
+        <img
+          src="picture/starrynight.jpeg"
+          data-speedX="0.1"
+          data-speedY="0.2"
+          class="parallax picover8"
+        />
+      </a>
+
+      <!-- potato eater  -->
+      <a href="potatoeater.html" target="_blank">
+        <img
+          src="picture/potatoeater.jpg"
+          data-speedX="0.1"
+          data-speedY="0.1"
+          class="parallax picover9"
+        />
+      </a>
+
+      <!--  Wheatfield under Thunderclouds-->
+      <a href="Wheatfield.html" target="_blank"
+        ><img
+          src="picture/Wheatfield.jpg"
+          data-speedX="0.2"
+          data-speedY="0.2"
+          class="parallax picover10"
+        />
+      </a>
+
+      <!-- <div class="parallax text" data-speedX="0.1" data-speedY="0.1">
+        <h1>Discover the life work of <br>Vincent van Gogh</h1>
+      </div> -->
+      <div class="text" id="changeColor">
+        <h1 id="title">Discover the life work of Vincent van Gogh</h1>
+      </div>
+    </main>
+
+    <script>
+      var title = document.getElementById("title");
+      var text = title.innerHTML.split("");
+      title.innerHTML = "";
+      text.forEach(function (char) {
+        var span = document.createElement("span");
+        span.innerHTML = char;
+        title.appendChild(span);
+      });
+    </script>
+
+    <!------------------------------------------------------------------connecting JS---------------------------------------------------------------------->
+    <script src="vangogh.js"></script>
+    <!-----------------------------------------------------------source code-------------------------------------------------------------------------------->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
